@@ -18,9 +18,9 @@ jobs:
       - run: npm install
       - run: npm test
 
-    - name: Cypress run
-      uses: cypress-io/github-action@v2
-      with:
-        build: expo build:web
-        start: expo start -w
-        wait-on: http://localhost:19006
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          build: expo build:web
+          start: expo start -w
+          wait-on: http://localhost:19006
